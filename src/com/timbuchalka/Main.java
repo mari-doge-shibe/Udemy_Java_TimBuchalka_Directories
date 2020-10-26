@@ -1,5 +1,6 @@
 package com.timbuchalka;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.*;
 
@@ -25,5 +26,11 @@ public class Main {
         } catch (IOException | DirectoryIteratorException e) {
             System.out.println(e.getMessage());
         }
+// it's a good practice to never hard code the separator
+        String separator = File.separator;
+        System.out.println(separator);
+        separator = FileSystems.getDefault().getSeparator();
+        System.out.println(separator);
+
     }
 }
