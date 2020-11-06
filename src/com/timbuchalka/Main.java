@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.nio.file.*;
 
 public class Main {
+    // Walking File Tree: Visit every file directory that can be reached from starting or root directory
 
     public static void main(String[] args) {
 //
