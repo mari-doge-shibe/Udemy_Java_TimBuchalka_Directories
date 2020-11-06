@@ -6,6 +6,12 @@ import java.nio.file.*;
 
 public class Main {
     // Walking File Tree: Visit every file directory that can be reached from starting or root directory
+    // using the methods in FileVisitor, you can run code at each stage of the traversal process
+    // preVisitDirectory()
+    // postVisitDirectory()
+    // visitFile()
+    // visitFileFailed()
+
 
     public static void main(String[] args) {
 //
