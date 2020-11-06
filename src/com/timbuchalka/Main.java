@@ -17,7 +17,8 @@ public class Main {
 //      the lambda equivalent of the above code
         DirectoryStream.Filter<Path> filter = p -> Files.isRegularFile(p);
 
-        Path directory = FileSystems.getDefault().getPath("FileTree/Dir2");  // FileTree\\Dir2 (windows)
+        Path directory = FileSystems.getDefault().getPath("FileTree" + File.separator + "Dir2");
+//        Path directory = FileSystems.getDefault().getPath("FileTree/Dir2");  // FileTree\\Dir2 (windows)
         try (DirectoryStream<Path> contents = Files.newDirectoryStream(directory, filter)) {
             for (Path file : contents) {
                 System.out.println(file.getFileName());
