@@ -12,6 +12,11 @@ public class CopyFiles extends SimpleFileVisitor<Path> {
     private Path sourceRoot;
     private Path targetRoot;
 
+    public CopyFiles(Path sourceRoot, Path targetRoot) {
+        this.sourceRoot = sourceRoot;
+        this.targetRoot = targetRoot;
+    }
+
 
     @Override
     public FileVisitResult visitFileFailed(Path file, IOException exc) throws IOException {
