@@ -77,5 +77,9 @@ public class Main {
             System.out.println(e.getMessage());
         }
 
+        File file = new File("/Example/file.txt");
+        Path convertedPath = file.toPath();
+        System.out.println("convertedPath = " + convertedPath);
+
     }
 }
